@@ -1,0 +1,3 @@
+Read up on socks5 behavior with udp packets
+
+Research on SNI ssl negotiations behavior with python requests, use other libraries if we can't change the SNI.

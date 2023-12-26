@@ -1,0 +1,9 @@
+Implements an opcode system similar to the socks5 specification.
+
+If client sends invalid credentials, silently drop the connection. (No data is to be sent OR close the socket on our side, half closed state)
+
+Multiple websockets are allowed to be opened, as long as repeated data isn't sent(?)
+
+Size should not be larger than 8192 per frame (Do we need to implement it directly or not)?
+
+UDP over TCP should work? Script may have to run as root.
