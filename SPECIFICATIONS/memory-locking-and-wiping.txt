@@ -1,0 +1,12 @@
+The implementation's memory should be fully locked in the host's ram to prevent swaping out pages. If a full memory lock is not possible lock pages relating to the encryption keys and current client pool.
+
+The client's encryption keys should be securely wiped (random bytes overwrite) when the following occurs:
+
+1. A client's encryption key have reached it's TTL (time to live)
+2. A new key has been agreed on
+3. The client has disconnected
+
+The receiving buffer should be securely wiped when the following occurs:
+
+1. Client has not reconnected during the timeout period after disconnecting.
+2. Client requested a wipe or not to keep the session while disconnecting.
