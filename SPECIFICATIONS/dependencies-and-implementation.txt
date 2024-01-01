@@ -1,0 +1,5 @@
+The efficiency and the security of the tunnel is highly dependent on the libraries used in the implementation of the protocol.
+
+The author of Hell's tunnel recommend the usage of the Sodium library. More information can be found here https://libsodium.org/
+
+Although not required, memory locking and memory wiping should be implemented. Implementation of the above features SHOULD be stated in the project's readme. This is to ensure that memory can not be dumped/recovered by an adversary easily. Even if the memory gets dumped and/or recovered, minimal data is leaked. Specifications on how memory should be locked or wiped will also be in here.
