@@ -9,6 +9,7 @@ The name "Hell's tunnel" comes from it's purpose, which is to make sure the data
 ## Project structure
 
 The file [SPECIFICATION.txt](SPECIFICATION.txt) contains the final specifications of the tunneling protocol.
+
 The directory [specification-breakdown](specification-breakdown/) contains a layman breakdown of the specification and it's various features.
 
 ## Features
