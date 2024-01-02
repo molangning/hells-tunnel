@@ -2,9 +2,14 @@
 
 Hell's tunnel is a layer 7 protocol that evades detection from traffic analysis and firewalls. It works by wrapping TCP/UDP data in a E2EE tunnel to the server over HTTPS WebSocket protocol.
 
-Hell's tunnel was named that as it tunnels and protects data from the hell introduced by censors, traffic analysis and/or blue teams. All traffic will be protected and only the sender and the recipient will know about the true contents of the sent data.
+This protocol can protect and hide transmitted data from being discovered by censors, traffic analysis and/or blue teams. Only the client and server knows about the true nature of the connection. Not only connections to remote addresses can be routed by the protocol, but also connections to another client can be routed as long as both clients are on the same server.
 
-The file [SPECIFICATION.txt](SPECIFICATION.txt) contains a rough sketch of the tunneling protocol while the directory [SPECIFICATIONS](SPECIFICATIONS/) contains the final specifications to the protocol
+The name "Hell's tunnel" comes from it's purpose, which is to make sure the data survives and remain undetected while going though "hell". It also comes from it's alternate purpose, which is to serve as a backdoor/pivot into a client or the internal network, opening up a tunnel from "hell". 
+
+## Project structure
+
+The file [SPECIFICATION.txt](SPECIFICATION.txt) contains the final specifications of the tunneling protocol.
+The directory [specification-breakdown](specification-breakdown/) contains a layman breakdown of the specification and it's various features.
 
 ## Features
 
