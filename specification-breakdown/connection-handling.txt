@@ -1,6 +1,8 @@
 Connections should be handled in the following way:
-1. Server waits for connections from client to determine the route. Possible routes can be to any remote addresse sor to another client connected to the server.
-2. Server then decides to accept or reject the routing request. If the server decides to reject the request, the server sends a "connection disallowed" message to the client
-3. If the server decides to accept the connection, the server will establish the connection to the destination first. The result of the connection will then be passed on to the client.
-4. If the connection to the destination is successful, the client will start passing data to the server.
-5. If the connection is unsuccessful, neither the client nor the server will have to do anything if the tunnel is established under "single tunnel" mode, but if the tunnel is established under "multi tunnel" mode the connection should be terminated and both server and client should not make any further communication.
+1. Server waits for connections from client
+2. Server handles the encryption and authentications between client.
+3. Client then sends the route to the server. Possible routes can be to any remote addresses or to another client connected to the server.
+4. Server then decides to accept or reject the routing request. If the server decides to reject the request, the server sends a "connection disallowed" message to the client
+5. If the server decides to accept the connection, the server will establish the connection to the destination first. The result of the connection will then be passed on to the client.
+6. If the connection to the destination is successful, the client will start passing data to the server.
+7. If the connection is unsuccessful, neither the client nor the server will have to do anything if the tunnel is established under "single tunnel" mode, but if the tunnel is established under "multi tunnel" mode the connection should be terminated and both server and client should not make any further communication.
