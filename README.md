@@ -16,6 +16,7 @@ The directory [specification-breakdown](specification-breakdown/) contains a lay
 
 - [ ] Outbound tunnel to a server
 - [ ] Reverse tunneling (Useful for pivoting through networks)
+- [ ] Hidden listener through IP whitelist/blacklist
 
 ## Possible usages
 
