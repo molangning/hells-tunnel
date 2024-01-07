@@ -10,4 +10,4 @@ UDP over TCP should work? Script may have to run as root.
 
 What about verifying certificates? Should CDN's root ca certificates be included?
 
-Should bad ip address be handled through a "firewall" script? Like client -> connection validator -> tunnel for legit connections and client -> connection validator -> fake server for bad ones? They should be listening on local.
+Should bad ip address be handled through a transparent proxy? Like client -> connection validator -> tunnel for legit connections and client -> connection validator -> fake server for bad ones? They should be listening on local.
