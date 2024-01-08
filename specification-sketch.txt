@@ -14,3 +14,5 @@ Should bad ip address be handled through a transparent proxy?
 Like client -> connection validator -> tunnel for legit connections and client -> connection validator -> fake server for bad ones They should be listening on local.
 
 Intercepter will craft a reply packet for all packets routed through it by using scapy and raw sockets.
+
+Need to write tests for triggering sequence wrap around
