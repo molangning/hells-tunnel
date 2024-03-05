@@ -1,0 +1,21 @@
+Evading detection is hard, especially if the https connection is monitored by a middle man. This document will discuss the ways that hell's tunnel will attempt to evade detection.
+
+> Entrophy reduction
+
+Entrophy can be reduced by using encoding like base64, base32 and hex encoding.
+Hex encoding is most effective in reducing entrophy at the cost of a bigger data size while base64 can reduce entrophy slightly while having minimum impact on data size.
+It is recommended to use base32 as it can reduce entrophy significantly while not transfering a lot of data.
+
+> Chunking
+
+Data can be broken down into chunks such that data can be split up into more parts. 
+This is useful if there are alerts for massive data transfered in an hour, a packet or in a connection.
+It is usually achieved on the client side by reconnecting after a specified time when a limit is about to be hit.
+
+> 1 RTT handshake
+
+Connection settings can be negotiated quickly by having the client do all the settings. Encrypted streams can also be resumed.
+
+> HTTP pure methods
+
+HTTP GET and POST can be used to prevent middleboxes from detecting the custom protocol. If used with other
