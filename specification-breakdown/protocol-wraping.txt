@@ -1,0 +1,16 @@
+Hell's tunnel SHOULD be wrapped in another protocol. All implementations of this protocol MUST implement the below techniques.
+
+> Http websockets
+
+The client should negotiate settings such as encryption and others before sending data using the multi stream protocol.
+
+> Pure http methods
+
+The client should use GET and POST methods ONLY. GET is for receiving while POST is for sending.
+
+For sending data, the client should mimic posting a form with a raw file content.
+One possible way is to use multipart/form-data as content type and file as the name of the field.
+
+Get should include the client id in the cookie. The cookie name could be named anything, as long as the server understands it.
+
+Data SHOULD NOT be send in plaintext if using encryption for this method. Instead, data should be sent according to client settings.
