@@ -18,4 +18,4 @@ Connection settings can be negotiated quickly by having the client do all the se
 
 > HTTP pure methods
 
-HTTP GET and POST can be used to prevent middleboxes from detecting the custom protocol. If used with other
+HTTP GET and POST can be used to prevent middleboxes from detecting the custom protocol. If used with other techniques here, it can be a perfect way to evade detection even when the https requests are being inspected.
