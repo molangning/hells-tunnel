@@ -1,5 +1,7 @@
 # Hell's tunnel
 
+**The only covert channel you need**
+
 Hell's tunnel is a layer 7 protocol that evades detection from traffic analysis and firewalls. It works by wrapping TCP/UDP data in a E2EE tunnel to the server over HTTPS WebSocket protocol.
 
 This protocol can protect and hide transmitted data from being discovered by censors, traffic analysis and/or blue teams. Only the client and server knows about the true nature of the connection. Not only connections to remote addresses can be routed by the protocol, but also connections to another client can be routed as long as both clients are on the same server.
@@ -28,4 +30,4 @@ The directory [specification-breakdown](specification-breakdown/) contains a lay
 
 - Protect a reverse shell connection or a foothold into a network.
 
-- Stealthily exfiltrate data from a target during a red team exercise.
+- Stealthily exfiltrate data from a target during a red team exercise (with features like entrophy reduction and pure http requests)
