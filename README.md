@@ -8,6 +8,8 @@ This protocol can protect and hide transmitted data from being discovered by cen
 
 The name "Hell's tunnel" comes from it's purpose, which is to make sure the data survives and remain undetected while going though "hell". It also comes from it's alternate purpose, which is to serve as a backdoor/pivot into a client or the internal network, opening up a tunnel from "hell". 
 
+Alternatively, it can be called "Heaven's gateway" or "C2-X01T"
+
 ## Project structure
 
 The file [SPECIFICATION.txt](SPECIFICATION.txt) contains the final specifications of the tunneling protocol.
@@ -19,6 +21,8 @@ The directory [specification-breakdown](specification-breakdown/) contains a lay
 - [ ] Outbound tunnel to a server
 - [ ] Reverse tunneling (Useful for pivoting through networks)
 - [ ] Hidden listener through IP whitelist/blacklist
+- [ ] Entrophy reduction even with encryption
+- [ ] Communicate using only http methods and no websockets
 
 ## Possible usages
 
@@ -30,4 +34,4 @@ The directory [specification-breakdown](specification-breakdown/) contains a lay
 
 - Protect a reverse shell connection or a foothold into a network.
 
-- Stealthily exfiltrate data from a target during a red team exercise (with features like entrophy reduction and pure http requests)
+- Stealthily exfiltrate data from a target during a red team exercise (with entrophy reduction and pure http requests)
