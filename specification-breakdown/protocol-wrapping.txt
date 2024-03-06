@@ -4,7 +4,7 @@ Hell's tunnel SHOULD be wrapped in another protocol. All implementations of this
 
 The client should negotiate settings such as encryption and others before sending data using the multi stream protocol.
 
-> Pure http methods
+> Pure http methods (polling)
 
 The client should use GET and POST methods ONLY. GET is for receiving while POST is for sending.
 
