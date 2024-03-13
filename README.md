@@ -36,4 +36,4 @@ The directory [specification-breakdown](specification-breakdown/) contains a lay
 
 ## What this should not be used for
 
-Don't use this for c2 channels, it will get flagged, use 
+Don't use this for c2 channels, it will get flagged.
