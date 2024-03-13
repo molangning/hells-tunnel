@@ -1,6 +1,6 @@
 # Hell's tunnel
 
-***The only covert channel you need***
+***The only covert channel you need for proxying***
 
 Hell's tunnel is a layer 7 protocol that evades detection from traffic analysis and firewalls. It works by wrapping TCP/UDP data in a E2EE tunnel to the server over HTTPS WebSocket protocol.
 
@@ -8,7 +8,7 @@ This protocol can protect and hide transmitted data from being discovered by cen
 
 The name "Hell's tunnel" comes from it's purpose, which is to make sure the data survives and remain undetected while going though "hell". It also comes from it's alternate purpose, which is to serve as a backdoor/pivot into a client or the internal network, opening up a tunnel from "hell". 
 
-Alternatively, it can be called "Heaven's gateway" or "C2-X01T"
+Alternatively, it can be called "Heaven's gateway"
 
 ## Project structure
 
@@ -34,4 +34,6 @@ The directory [specification-breakdown](specification-breakdown/) contains a lay
 
 - Protect a reverse shell connection or a foothold into a network.
 
-- Stealthily exfiltrate data from a target during a red team exercise (with entrophy reduction and pure http requests)
+## What this should not be used for
+
+Don't use this for c2 channels, it will get flagged, use 
